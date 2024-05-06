@@ -131,6 +131,7 @@ header {
     justify-content: center;
     align-items: center;
     padding-right: 10%;
+    margin-bottom: 0rem;
 }
 .menu ul li{
     list-style: none;
