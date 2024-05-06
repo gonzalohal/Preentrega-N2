@@ -181,6 +181,7 @@ header {
     background-image: url(../assets/img/Figurafondo.png);
     background-size: 100% 50%;
     background-repeat: no-repeat;
+    background-position-y: -100px;
 }
 
 .inicio-section-1{
@@ -192,7 +193,11 @@ header {
     padding-top: 12.5rem;
 }
 
-.inicio-section-1 >div>h1{
+.txt-sec1{
+    width: 31.25rem;
+}
+
+.txt-sec1 h1{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 3rem;
@@ -200,11 +205,18 @@ header {
     filter: drop-shadow(2px 8px 5px rgba(0, 0, 0, 0.241)); 
 }
 
-.inicio-section-1 >div> p{
+.txt-sec1 p{
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
     color: #ffffff;
     filter: drop-shadow(2px 8px 5px rgba(0, 0, 0, 0.241));
+}
+
+.img-sec1{
+    width: 31.25rem;
+}
+.img-sec1 img{
+    width: 100%;
 }
 
 .inicio-section-1 button{
@@ -255,6 +267,26 @@ header {
 }
 
 .txt-sec2 p{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #514F4F;
+    margin-bottom: 1.25rem;
+}
+
+.txt-sec22{
+    width: 70%;
+}
+
+.txt-sec22 h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #F761A7;
+    /* filter: drop-shadow(2px 8px 5px rgba(0, 0, 0, 0.241));  */
+}
+
+.txt-sec22 p{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
@@ -360,82 +392,15 @@ header {
 }
 
 .art5{
-    width: 20%;
-    padding: 40px;
-    background-color: #FFFFFF;
-    border-radius: 5.625rem;
     filter: drop-shadow(2px 8px 5px #01366F);
 }
 
-.art5 img{
-    padding: 2.5rem 1.875rem 1.875rem 0rem;
-}
-
-.art5 h3{
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 1.875rem;
-    color: #01366F;
-}
-
-.art5 p{
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-    color: #514F4F;
-}
-
 .art6{
-    width: 20%;
-    padding: 40px;
-    margin: 0rem 1.5625rem;
-    background-color: #FFFFFF;
-    border-radius: 5.625rem;
     filter: drop-shadow(2px 8px 5px #6875F6);
 }
 
-.art6 img{
-    padding: 1.875rem 0rem 1.875rem 0rem;
-}
-
-.art6 h3{
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 1.875rem;
-    color: #6875F6;
-}
-
-.art6 p{
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-    color: #514F4F;
-}
-
 .art7{
-    width: 20%;
-    padding: 40px;
-    background-color: #FFFFFF;
-    border-radius: 5.625rem;
     filter: drop-shadow(2px 8px 5px #6118D8);
-}
-
-.art7 img{
-    padding: 1.875rem 0rem 1.875rem 0rem;
-}
-
-.art7 h3{
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 1.875rem;
-    color: #6118D8;
-}
-
-.art7 p{
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-    color: #514F4F;
 }
 
 
@@ -504,24 +469,6 @@ header {
     animation: scroll 10s linear infinite;
 }
 
-@keyframes scroll{
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(-100%);
-    }
-}
-@keyframes slider{
-    from{
-        transform: translateX(-9%);
-    }
-    to{
-        transform: translateX(-109%);
-    }
-}
-
-
 .inicio-section-4{
     display: flex;
     flex-direction: row;
@@ -538,7 +485,7 @@ header {
     width: 31.25rem;
 }
 
-.inicio-section-4 >div>h4{
+.inicio-section-4-text h4{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 3rem;
@@ -546,7 +493,33 @@ header {
     width: 25rem;
 }
 
-.inicio-section-4 >div> p{
+
+.inicio-section-4-text p{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #514F4F;
+    width: 30rem;
+}
+
+.servicios-section-4-text{
+    width: 31.25rem;
+}
+
+.servicios-section-4-text h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #F761A7;
+    width: 25rem;
+}
+
+.servicios-section-4-img{
+    width: 31.25rem;
+}
+
+
+.servicios-section-4-text p{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
@@ -602,18 +575,19 @@ header {
     justify-content: center;
     align-items: center;
     filter: grayscale(100%);
-    margin-top: -1.875rem;
 }
+
 
 .slideTrack-2{
     display: flex;
+    align-items: center;
     animation: scroll 10s linear infinite;
 }
-/* 
-.slideTrack-2 img{
-    max-height: 100%;
-    height: auto;
-} */
+
+.carousel2:hover .slideTrack-2{
+    animation-play-state: paused;
+}
+
 .portfolio-section-1{
     display: flex;
     flex-direction: row;
@@ -622,8 +596,9 @@ header {
     width: 100vw;
     height: 100vh;
     background-image: url(../assets/img/portfolio_sections/sec1.png);
-    background-size: 100%;
+    /* background-size: 100%; */
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .s1-portfolio-sec1 h1{
@@ -657,6 +632,7 @@ header {
 .galeria-section2{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .gal1-s2{
@@ -723,6 +699,8 @@ header {
     display: flex;
     flex-direction: row;
     position: relative;
+    align-items: center;
+    justify-content: center;
     top: 0;
 }
 
@@ -769,19 +747,22 @@ header {
     display: flex;
     flex-direction: row;
     position: relative;
+    align-items: center;
+    justify-content: center;
     top: 0;
 }
 
-.s1-nosotros-space{
+/* .s1-nosotros-space{
     width: 20%;
-}
+} */
 
 .nosotros-sec1{
     display: flex;
-    width: 60vw;
+    /* width: 60vw; */
+    width: 100%;
     height: 100vh;
     background-image: url(../assets/img/nosotros_sections/sec1-img.png);
-    background-size: 100%;
+    /* background-size: 100%; */
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
@@ -834,6 +815,7 @@ header {
 .text2-sec2-nosotros{
     border: 5px solid #C14BD8;
     border-radius: 5.3125rem;
+    width: 55%;
 }
 
 .text2-sec2-nosotros h2{
@@ -881,28 +863,36 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-wrap: wrap;
     padding-top: 3.125rem;
 }
 
-.nosotros-section-3 >div>h4{
+.nos-txt-sec3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.nos-txt-sec3 h4{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 3rem;
     color: #BC52E2;
-    text-align: center;
 }
 
-.nosotros-section-3 >div> p{
+.nos-txt-sec3 p{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
     color: #514F4F;
-    text-align: center;
 }
 
 .nos-slide-sec5{
     margin-top: -1.875rem;
+    width: 80%;
 }
 
 .nos-slide-sec5 ul{
@@ -912,6 +902,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 3.125rem;
+    flex-wrap: wrap;
 }
 
 .n1-ul{
@@ -927,7 +918,8 @@ header {
     width: 100vw;
     height: 100vh;
     background-image: url(../assets/img/contacto_sections/fondo-s1-contacto.png);
-    background-size: 100%;
+    /* background-size: 100%; */
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -957,6 +949,7 @@ header {
 
 .s1-contacto-sec1{
     text-align: center;
+    width: 650px;
 }
 
 .form-contacto{
@@ -966,8 +959,11 @@ header {
     align-items: center;
 }
 
-.space-form-c{
-    width: 20%;
+.size-form{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .form-edit-c{
@@ -998,28 +994,48 @@ header {
     
 }
 
-.form-edit-text2{
+#form-style::-webkit-input-placeholder {
+    color: #514F4F;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    color: red;
-    width: 50%;
 }
-/* {
-    display: block;
-    border-radius: 30px;
-    width: 100%;
-    height: 60px;
-    padding: 10px 30px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #454360;
-    background-color: #FFF;
-    background-image: none;
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+
+#form-style {
+    border: 4px solid #F761A7;
+    border-radius: 3.125rem;
+    background-color: #F8F8F8;
+    filter: drop-shadow(2px 8px 5px rgba(0, 0, 0, 0.241));
+    padding: 1.25rem 1.25rem 1.05rem 2.25rem;
+}
+.btn-form{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #F761A7, #B746E0);
+    width: 23.75rem;
+    margin-top: 50px;
+    border: 4px solid #FFFFFF;
+    border-radius: 50px;
+    padding: 20px;
+    filter: drop-shadow(2px 8px 5px rgba(0, 0, 0, 0.241));
+}
+/* .btn-form{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #ffffff;
+    padding: .625rem 6.5rem;
+    border: none;
+    background-image: linear-gradient(to right, #F761A7, #B746E0);
+    border-radius: 3.125rem;
+    border-color: #FFFFFF;
+    border-width: .4875rem;
+    border-style:solid;
+    filter: drop-shadow(2px 8px 5px rgba(0, 0, 0, 0.241));
 } */
 /*--------------------------- Fin Main ---------------------------*/
 
@@ -1081,39 +1097,46 @@ footer{
     font-weight: medium;
     font-size: 1.5rem;
     color: #ffffff35;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /*--------------------------- Fin Footer ---------------------------*/
 
 /*--------------------------- Inicio media ---------------------------*/
 
-@media (max-width:1400px){
+@media (max-width:1440px){
     .navBar{
         display: grid;
         /* grid-template-columns: repeat(3, 1fr); */
         grid-template-columns: 30%  70%;
         grid-template-areas: "navBar1 navBar3";
     }
+
+    .footerstyle{
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 @media (max-width:1270px){
 
-    /* .navBar{
-        display: grid;
-        grid-template-columns: 60% 20% 20%;
-        grid-template-areas: "navBar1 navBar3 navBar2";
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 1.25rem;
-    } */
-    
+    .cuerpo {
+        background-position-y: -150px;
+    }
+
+    .img-sec1-servicios{
+        background-image: url(../assets/img/servicios_sections/fondo-sec1.png);
+        background-size: 100% 18%;
+        background-repeat: no-repeat;
+    }
+
     .navBar{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        /* padding: 1rem 1.5rem; */
     } 
 
     .navBar1 {
@@ -1148,25 +1171,143 @@ footer{
         height: 100%;
     } 
 
+    .botonflotante button{
+        margin-left: 84%;
+    }
+
+    .gal1-s2{
+        width: 100%;
+    }
+
     .txt-sec2{
         margin: 20.625rem 0rem 4rem;
+        width: 70%;
+    }
+
+    .txt-sec22{
         width: 70%;
     }
 
     .inicio-section-2 button a{
         margin: 1.25rem 7rem;
     }
-    .inicio-section-4 >div>h4{
+    .inicio-section-4-text h4{
         text-align: center;
         margin-left: 10% ;
     }
-    .inicio-section-4 >div>p{
+    .inicio-section-4-text >p{
         text-align: center;
     }
+
+    .servicios-section-4-text{
+        order: 1;
+        padding-bottom: 3.125rem;
+    }
+
+    .servicios-section-4-img{
+        order: 2;
+    }
+
+    .servicios-section-4-text h4{
+        text-align: center;
+        margin-left: 10% ;
+    }
+    .servicios-section-4-text >p{
+        text-align: center;
+    }
+
+    .footerstyle{
+        background-size: cover;
+        background-position: center;
+    }
+
+    .footerstyle >div> p{
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text2-sec2-nosotros h2{
+        text-align: center;
+        font-size: 4rem;
+        padding: .625rem 6.5rem;
+    }
+    .text2-sec2-nosotros h3{
+        text-align: center;
+        font-size: 4rem;
+        padding: .625rem 6.5rem;
+    }
+    
+    .text2-sec2-nosotros p{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: .625rem 6.5rem;
+    }
+    
+    .text2-sec2-nosotros a p{
+        font-size: 1.5rem;
+        padding: .625rem 6.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:744px){
+    .text2-sec2-nosotros h2{
+        text-align: center;
+        font-size: 2rem;
+        padding: 1.625rem 0rem 0rem;
+    }
+    .text2-sec2-nosotros h3{
+        text-align: center;
+        font-size: 2rem;
+        padding: 0rem 0rem .625rem;
+    }
+    
+    .text2-sec2-nosotros p{
+        text-align: center;
+        font-size: 1rem;
+        padding: .625rem 1.5rem;
+    }
+    
+    .text2-sec2-nosotros a p{
+        font-size: 1rem;
+        padding: .625rem 1.5rem;
+        text-align: center;
+    }
+
+    #form-style::-webkit-input-placeholder {
+        /* color: #514F4F;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem; */
+        text-align: center;
+    }
+
 
 }
 
 @media (max-width:472px){
+
+    .cuerpo {
+        background-image: url(../assets/img/Figurafondo.png);
+        background-size: 100% 25%;
+        background-repeat: no-repeat;
+    }
+
+    .img-sec1-servicios{
+        background-image: url(../assets/img/servicios_sections/fondo-sec1.png);
+        background-size: 100% 15%;
+        background-repeat: no-repeat;
+    }
+
+    .botonflotante button{
+        margin-left: 70%;
+    }
+
+    header {
+        grid-template-columns: 10% 62% 20%;
+    }
 
     .navBar1{
         width: 68%;
@@ -1191,12 +1332,290 @@ footer{
     .art3{
         width: 14rem;
     }
-        
+      
+    .gal1-s2{
+        width: 100%;
+    }
+
     .inicio-section-4{
         margin:3rem;
+        text-align: center;
+    }
+
+    .inicio-section-1{
+        padding-top: 8rem;
+    }
+
+    .txt-sec1{
+        width: 15.625rem;
+    }
+    
+    .txt-sec1 h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .txt-sec1 p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .img-sec1{
+        width: 15.625rem;
+    }
+
+    .txt-sec2{
+        margin: 4rem 0rem 4rem;
+    }
+
+    .txt-sec2 h2{
+        font-size: 2rem;
+    }
+
+    .txt-sec2 p{
+        font-size: 1rem;
+    }
+
+    .txt-sec3 h4{
+        font-size: 2rem;
+    }
+
+    .txt-sec3 p{
+        font-size: 1rem;
+    }
+
+    .nos-txt-sec3 h4{
+        font-size: 2rem;
+    }
+    
+    .nos-txt-sec3 p{
+        font-size: 1rem;
+    }
+
+    .text1-sec2-nosotros h2{
+        font-size: 2rem;
+    }
+    
+    .text1-sec2-nosotros p{
+        font-size: 1rem;
+    }
+
+    .inicio-section-4-text{
+        width: 15.625rem;
+    }
+
+    .servicios-section-4-text{
+        width: 15.625rem;
+        order: 1;
+    }
+    .inicio-section-4-img{
+        width: 15.625rem;
+    }
+
+    .servicios-section-4-img{
+        width: 15.625rem;
+        order: 2;
+    }
+    .servicios-section-4-img img{
+        width: 15.625rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1.25rem;
+    }
+
+    .inicio-section-4-img img{
+        width: 15.625rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1.25rem;
+        order: 2;
+    }
+
+    .inicio-section-4-text h4{
+        font-size: 2rem;
+        width: 15.625rem;
+        margin-left: 0;
+    }
+    
+    .inicio-section-4-text p{
+        font-size: 1rem;
+        width: 15.625rem;
+    }
+
+    .servicios-section-4-text h4{
+        font-size: 2rem;
+        width: 15.625rem;
+        margin-left: 0;
+    }
+    
+    .servicios-section-4-text p{
+        font-size: 1rem;
+        width: 15.625rem;
+    }
+
+    .txt-sec5 h4{
+        font-size: 2rem;
+    }
+
+    .txt-sec5 p{
+        font-size: 1rem;
+    }
+
+    .s1-portfolio-sec1 h1{
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        color: #ffffff;
+        padding: .625rem 1.5rem;
+        border: none;
+        background-image: linear-gradient(to right, #F761A7, #B746E0);
+        border-radius: 3.125rem;
+        border-color: #FFFFFF;
+        border-width: .4875rem;
+        border-style:solid;
+        filter: drop-shadow(2px 8px 5px rgba(0, 0, 0, 0.241));
+    }
+
+    .s1-portfolio-sec1 p{
+        font-size: 1rem;
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.61));
+    }
+
+    .servicios-sec1{
+        display: flex;
+        width: 100%;
+        background-image: url(../assets/img/servicios_sections/sec1.png);
+        background-size: 450px;
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servicios-sec1 h1{
+        font-size: 2rem;
+        padding: .625rem 3rem;
+    }
+
+    .text2-sec2-nosotros h2{
+        text-align: center;
+        font-size: 2rem;
+        padding: 1.625rem 1.5rem 0rem;
+    }
+    .text2-sec2-nosotros h3{
+        text-align: center;
+        font-size: 2rem;
+        padding: 0rem 1.5rem .625rem;
+    }
+    
+    .text2-sec2-nosotros p{
+        text-align: center;
+        font-size: 1rem;
+        padding: .625rem 1.5rem;
+    }
+    
+    .text2-sec2-nosotros a p{
+        font-size: 1rem;
+        padding: .625rem 1.5rem;
+        text-align: center;
+    }
+
+    .nosotros-sec1{
+        background-size: 500px;
+    }
+
+    .nosotros-sec1 h1{
+        font-size: 2rem;
+        padding: .625rem 2rem;
+    }
+    
+    #form-style::-webkit-input-placeholder {
+        /* color: #514F4F;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem; */
+        text-align: center;
+    }
+
+    .btn-form{
+        width: 13.75rem;
+    }
+
+    .s1-contacto-sec1 h1{
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        color: #ffffff;
+        padding: 0rem 0rem;
+        border: none;
+        background-image: linear-gradient(to right, #F761A7, #B746E0);
+        border-radius: 3.125rem;
+        border-color: #FFFFFF;
+        border-width: .4875rem;
+        border-style:solid;
+        filter: drop-shadow(2px 8px 5px rgba(0, 0, 0, 0.241));
+    }
+    
+    .s1-contacto-sec1 p{
+        font-size: 1rem;
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.562));
+    }
+    
+    .s1-contacto-sec1{
+        text-align: center;
+        width: 250px;
+    }
+
+}
+
+@media (max-width:320px){
+
+    .text2-sec2-nosotros{
+        border-radius: 3.3125rem;
+    }
+
+    .text2-sec2-nosotros h2{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1.625rem 0rem 0rem;
+    }
+    .text2-sec2-nosotros h3{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0rem 0rem .625rem;
+    }
+    
+    .text2-sec2-nosotros p{
+        text-align: center;
+        font-size: 1rem;
+        padding: .625rem 1.5rem;
+    }
+    
+    .text2-sec2-nosotros a p{
+        font-size: 1rem;
+        padding: .625rem 1.5rem;
         text-align: center;
     }
 }
 
 
 /*--------------------------- Fin media ---------------------------*/
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+@keyframes slider{
+    from{
+        transform: translateX(-9%);
+    }
+    to{
+        transform: translateX(-109%);
+    }
+}
